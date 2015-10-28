@@ -1,0 +1,160 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    line-height:1;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+}
+input,select,textarea{
+    vertical-align:middle;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #677278;
+}
+.clrfix:after, .form-field:after{
+    content: '';
+    clear: both;
+    display: block;
+}
+h2{
+    font-weight: 500;
+    color: #677278;
+    text-align: center;
+    padding: 20px 0;
+}
+.wrapper{
+	width: 800px;
+    margin: 0 auto;
+}
+
+.form-field{
+    border-top:1px solid #edeeee;
+    padding: 35px 0;
+    display: table;
+    width: 100%;
+    vertical-align: middle;
+}
+.form-field input[type="text"]{
+    width: 100%;
+    border:2px solid #c4c9cc;
+    border-radius: 3px;
+    height: 48px;
+    padding: 0 5px;
+    text-align: center;
+}
+.form-field input[type="text"]:hover, .form-field input[type="text"]:focus{
+    border-color:#4380bc;
+    color: #4380bc;
+}
+
+.fieldArea{
+    width: 70%;
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 15px;
+    font-weight: 600;
+    color: #889399
+}
+.fieldArea h5, .fieldArea h6{
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0 0 10px 0;
+    color: #677278;
+}
+.fieldArea h6{
+    font-size: 13px;
+}
+.form-field label span{
+    display: block;
+    font-size: 11px;
+    line-height: 13px;
+    padding-left: 39px;
+}
+.labelTxt{
+    color:#b5babc;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    width: 30%;
+    display: table-cell;
+    vertical-align: middle;
+}
+.box-3-min ,.box-3, .box-4 {
+    display: table-cell;
+    vertical-align: middle;
+    width: 8%;
+}
+.box-4{
+    width: 10%;
+}
+.box-3-min{
+    width: 5%;
+}
+.box-3-min p{
+    padding-left: 5px;
+}
+.cust-checkbox:checked + .cust-checkboxLabel:before, .cust-radio:checked + .cust-radioLabel:before {
+	content: '';
+    background: #528fcc;
+    border-color:#4380bc;
+    -webkit-transition: all .5s ease;
+       -moz-transition: all .5s ease;
+        -ms-transition: all .5s ease;
+         -o-transition: all .5s ease;
+            transition: all .5s ease;
+}
+.cust-radioLabel.w50{
+	width: 47%
+}
+.cust-radioLabel figure{display:block;
+    float: left;
+}
+.cust-checkbox, .cust-radio {
+    opacity: 0;
+    position: absolute;
+}
+.cust-checkbox, .cust-checkboxLabel, .cust-radio, .cust-radioLabel {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 5px;
+    cursor: pointer;
+}
+.cust-checkbox + .cust-checkboxLabel:before, .cust-radio + .cust-radioLabel:before {
+    content: '';
+    background: #fff;
+    border: 2px solid #528fcc ;
+    display: inline-block;
+    vertical-align: middle;
+    width: 25px;
+    height: 25px;
+    margin-right: 6px;
+    text-align: center;
+    border-radius: 2px;
+}
+.cust-radio + .cust-radioLabel:before {
+    border-radius: 50%;
+}
+.gender-col.cust-radio + .gender-col.cust-radioLabel:before {
+	content: ''	;
+    height: 50px;
+    width:50px;
+    padding: 4px;
+    opacity:0.3
+}
+.gender-col.cust-radio:checked + .gender-col.cust-radioLabel:before{
+    content: ''	;
+    height: 50px;
+    width:50px;
+    padding: 4px;
+    opacity: 1
+}
+.f-im:before{
+    background: url(../img/female.png) center no-repeat !important;
+}
+.m-im:before{
+    background: url(../img/male.png) center no-repeat !important;
+}
